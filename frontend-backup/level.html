@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Level</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Difficulty Level</h1>
+    <p>Choose your preparation level</p>
+
+    <div class="features">
+      <button onclick="selectLevel('Beginner')">Beginner</button>
+      <button onclick="selectLevel('Intermediate')">Intermediate</button>
+      <button onclick="selectLevel('Advanced')">Advanced</button>
+    </div>
+
+  </div>
+
+  <script>
+    function selectLevel(level) {
+      localStorage.setItem("level", level);
+      window.location.href = "questions.html";
+    }
+  </script>
+
+</body>
+</html>

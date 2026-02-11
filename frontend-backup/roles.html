@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select Role</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select Practice Role</h1>
+    <p>Choose your interview category</p>
+
+    <div class="features">
+      <button onclick="selectRole('Developer')">Developer</button>
+      <button onclick="selectRole('Data Analyst')">Data Analyst</button>
+      <button onclick="selectRole('HR Round')">HR Round</button>
+      <button onclick="selectRole('Aptitude')">Aptitude</button>
+      <button onclick="selectRole('Reasoning')">Reasoning</button>
+    </div>
+  </div>
+
+  <script>
+    function selectRole(role) {
+      localStorage.setItem("role", role);   // save role
+      window.location.href = "level.html";  // go to level
+    }
+  </script>
+
+</body>
+</html>
